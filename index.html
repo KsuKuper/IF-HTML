@@ -81,7 +81,6 @@
     </p>
     <h3>Work with the lists</h3>
     <h4><mark>Add lists</mark></h4>
-    <p></p>
     <ol>
       <li>
         Тема 1: Знакомство с Web
@@ -120,7 +119,6 @@
     </ol>
     <h3>Work with a table</h3>
     <h4><mark>Add a table</mark></h4>
-    <p></p>
     <table align="center" bgcolor="#f5deb3" border="2" width="80%">
       <caption>
         <b>Table tags</b>
@@ -181,5 +179,99 @@
         </tr>
       </tbody>
     </table>
+    <h3>Work with forms</h3>
+    <h4><mark>Add forms</mark></h4>
+    <form>
+      <fieldset>
+        <legend>My first form</legend>
+        <p>
+          <label for="name"><b>Name</b></label
+          ><br />
+          <input
+            id="name"
+            type="text"
+            name="name"
+            required
+            placeholder="Kseniya"
+          />
+        </p>
+        <p>
+          <label for="email"><b>Email</b></label
+          ><br />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            placeholder="example&#64;gmail.com"
+          />
+        </p>
+        <p>
+          <label for="password"><b>Password</b></label
+          ><br />
+          <input id="password" type="password" name="password" required/>
+        </p>
+        <p>
+          <label for="programming"><b>Your programming level</b></label
+          ><br />
+          <input
+            id="programming"
+            type="range"
+            name="programming"
+            min="0"
+            max="10"
+            value="5"
+          />
+        </p>
+        <p>
+          <label><b>What does HTML stand for?</b></label
+          ><br />
+        </p>
+
+        <p>
+          <input id="chb1" type="checkbox" name="answer" value="1" />
+          <label for="chb1">Hyperlinks and Text Markup Language</label><br />
+          <input id="chb2" type="checkbox" name="answer" value="2" />
+          <label for="chb2">Home Tool Markup Language</label><br />
+          <input id="chb3" type="checkbox" name="answer" value="3" />
+          <label for="chb3">Hyper Text Markup Language</label><br />
+        </p>
+        <p>
+          <label><b>What does HTML stand for?</b></label
+          ><br />
+          <input id="r1" type="radio" name="answer" value="1" />
+          <label for="r1">Hyperlinks and Text Markup Language</label><br />
+          <input id="r2" type="radio" name="answer" value="2" />
+          <label for="r2">Home Tool Markup Language</label><br />
+          <input id="r3" type="radio" name="answer" value="3" />
+          <label for="r3">Hyper Text Markup Language</label><br />
+        </p>
+        <p>
+          <label for="comment"><b>Comment</b></label
+          ><br />
+          <textarea
+            maxlength="500"
+            id="comment"
+            name="comment"
+            placeholder="Comment"
+          ></textarea>
+        </p>
+        <p>
+          <label for="dropdown"><b>What HTML tags do you know?</b></label
+          ><br />
+          <select id="dropdown" name="dropdown">
+            <option disabled selected>Please select</option>
+            <option value="1">table</option>
+            <option value="2">i</option>
+            <option value="3">input</option>
+            <option value="4">p</option>
+            <option value="5">br</option>
+          </select>
+        </p>
+        <p>
+          <button><b>Send</b></button>
+        </p>
+      </fieldset>
+    </form>
   </body>
 </html>
