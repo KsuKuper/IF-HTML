@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>My first steps in Front-end</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="icon" type="image/x-icon" href="./image/icon-love.png" />
   </head>
   <body>
     <h1><em>Front-end development course</em></h1>
     <h2>Lesson 2</h2>
-    <h5><a href="#scroll">click here if you want to go to Lesson 3</a></h5>
+    <h5><a href="#scroll3">click here if you want to go to Lesson 3</a></h5>
+    <hr />
     <h3><i>What does this mean, to tell about myself?</i></h3>
-    <pre>
+    <pre id="blockquote">
       &ldquo;For me it is commensurated with a reading of a separate chapter of the book, for example:&quot;traces of becoming who you are today &hellip;&quot; or separate
       &quot;fragments about the evolution of a school pupil into a real specialist &hellip;&quot;
       Nothing passes by without leaving traces in our lives and everyone is aware of this and must understand.
@@ -51,9 +54,8 @@
       &#9786;<br />At that moment, I decided that I want to, and I will improve
       step by step!<br />Now!<br />I am travelling in the field of IT and
       leaving a mark on the path to self-development in front-end development,
-      and I enjoy the road that leads me to the realization of my dreams.<br /><a
-        href="./about/"
-        target="_blank"
+      and I enjoy the road that leads me to the realization of my dreams.<br />
+      <a href="./about/" target="_blank"
         >Why did I want to become a front-end developer?</a
       ><br />Let&apos;s do this together&#9786;<br />
     </p>
@@ -61,8 +63,7 @@
     <p>
       GitHub:
       <a href="https://github.com/KsuKuper" target="_blank"
-        >GitHub.com/KsuKuper</a
-      >
+        >GitHub.com/KsuKuper</a>
     </p>
     <p>
       &#9742;: <a href="tel:+375293082028" target="_blank">+375293082028</a>
@@ -70,11 +71,11 @@
     <p>
       &#9993;:
       <a href="mailto:nekrashevich.k&#64;mail.ru" target="_blank"
-        >nekrashevich.k&#64;mail.ru</a
-      >
+        >nekrashevich.k&#64;mail.ru</a>
     </p>
     <hr />
-    <h2 id="scroll">Lesson 3</h2>
+    <h2 id="scroll3">Lesson 3</h2>
+    <h5><a href="#scroll4">click here if you want to go to Lesson 4</a></h5>
     <h4><mark>Add any image</mark></h4>
     <p>
       <img src="./image/content/girl.JPG" alt="baby girl" />
@@ -119,7 +120,7 @@
     </ol>
     <h3>Work with a table</h3>
     <h4><mark>Add a table</mark></h4>
-    <table align="center" bgcolor="#f5deb3" border="2" width="80%">
+    <table>
       <caption>
         <b>Table tags</b>
       </caption>
@@ -184,33 +185,39 @@
     <form>
       <fieldset>
         <legend>My first form</legend>
-        <p>
-          <label for="name"><b>Name</b></label
-          ><br />
+        <div>
+          <label for="name"><b>Name</b></label>
           <input
+            class="input"
             id="name"
             type="text"
             name="name"
             required
-            placeholder="Kseniya"
-          />
-        </p>
-        <p>
-          <label for="email"><b>Email</b></label
-          ><br />
+            placeholder="Kseniya"/>
+          <label for="email"><b>Email</b></label>
           <input
+            class="input"
             id="email"
             type="email"
             name="email"
             required
-            placeholder="example&#64;gmail.com"
+            placeholder="example&#64;gmail.com"/>
+          <label for="password"><b>Password</b></label>
+          <input
+            class="input"
+            id="password"
+            type="password"
+            name="password"
+            required
           />
-        </p>
-        <p>
-          <label for="password"><b>Password</b></label
-          ><br />
-          <input id="password" type="password" name="password" required/>
-        </p>
+        </div>
+        <div>
+          <button class="button"><b>OK</b></button>
+          <button class="button"><b>Cancel</b></button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>My 2d form</legend>
         <p>
           <label for="programming"><b>Your programming level</b></label
           ><br />
@@ -273,5 +280,7 @@
         </p>
       </fieldset>
     </form>
+    <h2 id="scroll4">Lesson 4</h2>
+    <a href="./about/lesson4.html" target="_blank"> What do we offer</a>
   </body>
 </html>

@@ -1,0 +1,54 @@
+*{
+    margin: 2px;
+}
+h1 {
+    color: #993f3f; text-align: center;
+}
+#blockquote {
+    color: #3b3a3a;
+}
+h2 {
+   color: #1f4796;
+}
+h3 {
+    color: #4d8d4d;
+}
+ table, td, th {
+     border: 1px solid black;
+ }
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+th {
+    height: 50px;
+    text-align: left;
+}
+tr:hover {
+    background-color: #deba97;
+}
+a:hover {
+    color: #3b3a3a;
+}
+input[type="text"]
+{
+    color: #e79898;
+}
+ol::before {
+    content: " ! The first step towards the development !";
+    background-color: #d7d77b;
+    color: #ad3c3c;
+    font-weight: bold;
+}
+ol::after {
+    content: " ! The first step towards the development has been taken !";
+    background-color: #d7d77b;
+    color: #ad3c3c;
+}
+.input {
+    min-inline-size: auto;
+    /*height: 100px;*/
+}
+.button {
+    min-width: 70px;
+}
