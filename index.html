@@ -63,7 +63,8 @@
     <p>
       GitHub:
       <a href="https://github.com/KsuKuper" target="_blank"
-        >GitHub.com/KsuKuper</a>
+        >GitHub.com/KsuKuper</a
+      >
     </p>
     <p>
       &#9742;: <a href="tel:+375293082028" target="_blank">+375293082028</a>
@@ -71,18 +72,19 @@
     <p>
       &#9993;:
       <a href="mailto:nekrashevich.k&#64;mail.ru" target="_blank"
-        >nekrashevich.k&#64;mail.ru</a>
+        >nekrashevich.k&#64;mail.ru</a
+      >
     </p>
     <hr />
     <h2 id="scroll3">Lesson 3</h2>
     <h5><a href="#scroll4">click here if you want to go to Lesson 4</a></h5>
     <h4><mark>Add any image</mark></h4>
     <p>
-      <img src="./image/content/girl.JPG" alt="baby girl" />
+      <img class="img" src="./image/content/girl.JPG" alt="baby girl" />
     </p>
     <h3>Work with the lists</h3>
     <h4><mark>Add lists</mark></h4>
-    <ol>
+    <ol class="form_fieldset">
       <li>
         Тема 1: Знакомство с Web
         <ul>
@@ -120,7 +122,7 @@
     </ol>
     <h3>Work with a table</h3>
     <h4><mark>Add a table</mark></h4>
-    <table>
+    <table class="form_fieldset">
       <caption>
         <b>Table tags</b>
       </caption>
@@ -183,7 +185,7 @@
     <h3>Work with forms</h3>
     <h4><mark>Add forms</mark></h4>
     <form>
-      <fieldset>
+      <fieldset class="form_fieldset">
         <legend>My first form</legend>
         <div>
           <label for="name"><b>Name</b></label>
@@ -193,7 +195,8 @@
             type="text"
             name="name"
             required
-            placeholder="Kseniya"/>
+            placeholder="Kseniya"
+          />
           <label for="email"><b>Email</b></label>
           <input
             class="input"
@@ -201,7 +204,8 @@
             type="email"
             name="email"
             required
-            placeholder="example&#64;gmail.com"/>
+            placeholder="example&#64;gmail.com"
+          />
           <label for="password"><b>Password</b></label>
           <input
             class="input"
@@ -216,7 +220,7 @@
           <button class="button"><b>Cancel</b></button>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="form_fieldset">
         <legend>My 2d form</legend>
         <p>
           <label for="programming"><b>Your programming level</b></label
@@ -280,7 +284,47 @@
         </p>
       </fieldset>
     </form>
+    <hr />
     <h2 id="scroll4">Lesson 4</h2>
-    <a href="./about/lesson4.html" target="_blank"> What do we offer</a>
+    <section class="advantage">
+      <h4 class="advantage__title">What do we offer</h4>
+      <div>
+        <hr class="advantage__title__line" />
+      </div>
+      <ul class="advantage__list">
+        <li class="advantage__item">
+          <div class="advantage__block">
+            <div class="advantage__icon">
+              <img src="./image/img.png" alt="icon-support" />
+            </div>
+            <div class="advantage__desc">Support 24/7</div>
+          </div>
+        </li>
+        <li class="advantage__item">
+          <div class="advantage__block">
+            <div class="advantage__icon">
+              <img src="./image/img_1.png" alt="icon-communicate" />
+            </div>
+            <div class="advantage__desc">Communicate directory</div>
+          </div>
+        </li>
+        <li class="advantage__item">
+          <div class="advantage__block">
+            <div class="advantage__icon">
+              <img src="./image/img_2.png" alt="icon-book-online" />
+            </div>
+            <div class="advantage__desc">Book online</div>
+          </div>
+        </li>
+        <li class="advantage__item">
+          <div class="advantage__block">
+            <div class="advantage__icon">
+              <img src="./image/img_3.png" alt="icon-guest" />
+            </div>
+            <div class="advantage__desc">Real guest reviews</div>
+          </div>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
