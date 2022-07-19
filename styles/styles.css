@@ -1,3 +1,9 @@
+@import url('./fonts');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 *{
     margin: 2px;
 }
@@ -121,4 +127,117 @@ img {
     max-width: 100px;
     min-height: 100px;
     width: auto;
+}
+
+.line {
+    margin: 50px 10px 20px;
+}
+
+.bottom_line {
+    height: 4px;
+    border-color: #305930;
+    background-color: #F5BD41;
+}
+
+/*Lesson 5*/
+/*WHAT DO WE OFFER*/
+
+.cont {
+    max-width: 1440px;
+    padding: 100px 16px 0;
+    margin: 0 auto;
+}
+
+.cont_title {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin: 120px auto 20px;
+}
+
+.cont_line {
+    border: none;
+    background: #F5BD41;
+    overflow: visible;
+    width: 100px;
+    height: 4px;
+    margin: 70px auto 100px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+    margin: 20px 104px 115px;
+}
+
+.col {
+    width: 25%;
+}
+
+.cont_row {
+    margin-bottom: 120px;
+}
+
+.cont_col {
+    text-align: center;
+}
+
+.cont_icon {
+    max-width: 100px;
+    min-height: 100px;
+    width: auto;
+}
+
+.cont_title_icon {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 65px auto 10px;
+    font-weight: 400;
+    text-align: center;
+    color: #383838;
+}
+
+/*FOOTER*/
+
+.flex-cont-footer {
+    background: #10367C;
+    max-width: 1440px;
+    height: 630px;
+    margin: 0;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 4px;
+}
+
+.cont_block_row {
+    display: flex;
+}
+
+.cont_col_about {
+    width: 193px;
+    height: 211px;
+    margin: 120px 222px 0 104px;
+    color: #ffffff;
+}
+
+.cont_col_property {
+    width: 134px;
+    height: 310px;
+    margin: 120px 282px 0 0;
+    color: #ffffff;
+}
+
+.cont_col_support {
+    width: 233px;
+    height: 122px;
+    margin: 120px 272px 0 0;
+    color: #ffffff;
+}
+
+.row_1.row_2.row_3 {
+    line-height: 23px;
+}
+
+#footer {
+   margin: 104px 0 1080px 120px;
+    color: #ffffff;
 }
