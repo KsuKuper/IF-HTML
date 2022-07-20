@@ -5,11 +5,17 @@ body {
 }
 
 *{
-    margin: 2px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /*Lesson 5*/
 /*WHAT DO WE OFFER*/
+
+.title {
+    text-align: center;
+    color: #383838;
+}
 
 .cont {
     max-width: 1440px;
@@ -70,43 +76,37 @@ body {
 
 .flex-cont-footer {
     background: #10367C;
-    max-width: 1440px;
-    height: 630px;
-    margin: 0;
-    border: 1px solid #000000;
-    box-shadow: 0 4px 4px;
 }
 
-.cont_block_row {
+.cont_footer_row {
     display: flex;
+    background: #10367C;
+    max-width: 1440px;
+    gap: 10px;
 }
 
-.cont_col_about {
+.cont_footer_col {
+    width: 33%;
+    margin: 120px 222px 0 64px;
+    color: #ffffff;
+    list-style: none;
+    line-height: 2.3;
+}
+
+.row_about {
     width: 193px;
-    height: 211px;
-    margin: 120px 222px 0 104px;
-    color: #ffffff;
 }
 
-.cont_col_property {
+.row_property {
     width: 134px;
-    height: 310px;
-    margin: 120px 282px 0 0;
-    color: #ffffff;
 }
 
-.cont_col_support {
+.row_support {
     width: 233px;
-    height: 122px;
-    margin: 120px 272px 0 0;
-    color: #ffffff;
 }
-
-.row_1.row_2.row_3 {
-    line-height: 23px;
-}
-
 #footer {
-   margin: 104px 0 1080px 120px;
+   margin: 64px 1080px 0 104px;
+    padding-bottom: 120px;
+    width: 350px;
     color: #ffffff;
 }
