@@ -2,15 +2,62 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My first steps in Front-end</title>
+    <title>TripHouse_Site</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="icon" type="image/x-icon" href="./image/icon-love.png" />
   </head>
   <body>
+  <!--    LESSON 6 7 -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__inner">
+        <div class="header__inner--logo">
+          <img src="image/logo.svg" alt="logo-icon">
+        </div>
+        <nav class="header__inner--nav">
+          <a class="nav-link" href="#">Stays</a>
+          <a class="nav-link" href="#">Attractions</a>
+          <a class="nav-link" href="#">
+            <img src="image/night.svg" alt="night-icon">
+          </a>
+          <a class="nav-link" href="#">
+            <img src="image/account.svg" alt="account-icon">
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="page">
+    <div class="page__container">
+      <div class="page__container--inner">
+        <h1 class="page__container--title">Discover stays to live, work or just relax</h1>
+        <div class="page__container--subtitle">
+          <div class="hotel">Your destination or hotel name</div>
+          <div class="check">Check-in — Check-out</div>
+        </div>
+        <div class="page__container--search">
+          <div class="page__container--search-city">New York</div>
+          <div class="page__container--search-inner-date">
+            <span class="page__container--search-date">Tue 15 Sept — Sat 19 Sept</span>
+          </div>
+          <div class="page__container--search-set">2 Adults — 0 Children — 1 Room</div>
+          <div class="page__container--search-inner-button">
+            <div class="page__container--search-button">Search</div>
+          </div>
+        </div>
+        <div class="page__container--app">
+          <div class="page__container--app-google">
+            <img src="image/google.svg" alt="google app">
+          </div>
+          <div class="page__container--app-store">
+            <img src="image/store.svg" alt="app store">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     <!--    LESSON 5 -->
     <!--    WHAT DO WE OFFER-->
-
-    <h2 class="title">Lesson 5</h2>
     <div class="cont">
       <h4 class="cont_title">What do we offer</h4>
       <hr class="cont_line" />
@@ -37,7 +84,6 @@
         </div>
       </div>
     </div>
-
     <!--  FOOTER-->
     <div class="flex-cont-footer">
       <div class="cont_block_row">
@@ -62,7 +108,7 @@
           <div class="row_3 service">Contact Customer Service</div>
         </div>
       </div>
-      <p id="footer">&copy; 2020 Triphouse, Inc. All rights reserved</p>
+      <p id="footer">&copy; 2020 TripHouse, Inc. All rights reserved</p>
     </div>
   </body>
 </html>
