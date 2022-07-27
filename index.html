@@ -7,80 +7,108 @@
     <link rel="icon" type="image/x-icon" href="./image/icon-love.png" />
   </head>
   <body>
-  <!--    LESSON 6 7 -->
-  <header class="header">
-    <div class="header__container">
-      <div class="header__inner">
-        <div class="header__inner--logo">
-          <img src="image/logo.svg" alt="logo-icon">
-        </div>
-        <nav class="header__inner--nav">
-          <a class="nav-link" href="#">Stays</a>
-          <a class="nav-link" href="#">Attractions</a>
-          <a class="nav-link" href="#">
-            <img src="image/night.svg" alt="night-icon">
-          </a>
-          <a class="nav-link" href="#">
-            <img src="image/account.svg" alt="account-icon">
-          </a>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <div class="page">
-    <div class="page__container">
-      <div class="page__container--inner">
-        <h1 class="page__container--title">Discover stays to live, work or just relax</h1>
-        <div class="page__container--subtitle">
-          <div class="hotel">Your destination or hotel name</div>
-          <div class="check">Check-in — Check-out</div>
-        </div>
-        <div class="page__container--search">
-          <div class="page__container--search-city">New York</div>
-          <div class="page__container--search-inner-date">
-            <span class="page__container--search-date">Tue 15 Sept — Sat 19 Sept</span>
+    <!--    LESSON 6 7 -->
+    <!--    MAIN PAGE-->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__inner">
+          <div class="header__inner--logo">
+            <img src="image/logo.svg" alt="logo-icon" />
           </div>
-          <div class="page__container--search-set">2 Adults — 0 Children — 1 Room</div>
-          <div class="page__container--search-inner-button">
-            <div class="page__container--search-button">Search</div>
-          </div>
-        </div>
-        <div class="page__container--app">
-          <div class="page__container--app-google">
-            <img src="image/google.svg" alt="google app">
-          </div>
-          <div class="page__container--app-store">
-            <img src="image/store.svg" alt="app store">
-          </div>
+          <nav class="header__inner--nav">
+            <a class="nav-link" href="#">Stays</a>
+            <a class="nav-link" href="#">Attractions</a>
+            <a class="nav-link" href="#">
+              <img src="image/night.svg" alt="night-icon" />
+            </a>
+            <a class="nav-link" href="#">
+              <img src="image/account.svg" alt="account-icon" />
+            </a>
+          </nav>
         </div>
       </div>
+    </header>
+    <div class="page">
+      <div class="page__container">
+        <div class="page__container--inner">
+          <h1 class="page__container--title">
+            Discover stays to live, work or just relax
+          </h1>
+          <div class="page__container--subtitle">
+            <div class="hotel">Your destination or hotel name</div>
+            <div class="check">Check-in — Check-out</div>
+          </div>
+          <div class="page__container--search">
+            <div class="page__container--search-city">New York</div>
+            <div class="page__container--search-inner-date">
+              <span class="page__container--search-date"
+                >Tue 15 Sept — Sat 19 Sept
+              </span>
+            </div>
+            <div class="page__container--search-set">
+              2 Adults — 0 Children — 1 Room
+            </div>
+            <div class="page__container--search-inner-button">
+              <div class="page__container--search-button">Search</div>
+            </div>
+          </div>
+          <div class="page__container--app">
+            <div class="page__container--app-google">
+              <img src="image/google.svg" alt="google app" />
+            </div>
+            <div class="page__container--app-store">
+              <img src="image/store.svg" alt="app store" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
     <!--    LESSON 5 -->
     <!--    WHAT DO WE OFFER-->
-    <div class="cont">
-      <h4 class="cont_title">What do we offer</h4>
-      <hr class="cont_line" />
-      <div class="row cont_row">
-        <div class="col cont_col">
-          <img class="cont_icon support" src="./image/img.png" alt="support" />
-          <h3 class="cont_title_icon">Support 24/7</h3>
+<!--    block-advantage-->
+    <div class="advantage">
+<!--      element-title-->
+      <h4 class="advantage__title">What do we offer</h4>
+      <div class="advantage__title--line"></div>
+<!--      element-row-->
+      <div class="advantage__row">
+<!--        modifier-item-->
+<!--        1 item-->
+        <div class="advantage__row--item">
+          <!--        modifier-support-wrapper-->
+          <div class="advantage--img-wrapper">
+            <img
+              class="advantage--icon"
+              src="./image/img.png"
+              alt="support"
+            />
+          </div>
+          <h3 class="advantage--item--subtitle">Support 24/7</h3>
         </div>
-        <div class="col cont_col">
-          <img
-            class="cont_icon communicate"
-            src="./image/img_1.png"
-            alt="communicate"
-          />
-          <h3 class="cont_title_icon">Communicate directory</h3>
+<!--        2 item-->
+        <div class="advantage__row--item">
+          <div class="advantage--img-wrapper">
+            <img
+              class="advantage--icon"
+              src="./image/img_1.png"
+              alt="communicate"
+            />
+          </div>
+          <h3 class="advantage--item--subtitle">Communicate directory</h3>
         </div>
-        <div class="col cont_col">
-          <img class="cont_icon book" src="./image/img_2.png" alt="book" />
-          <h3 class="cont_title_icon">Book online</h3>
+<!--        3 item-->
+        <div class="advantage__row--item">
+          <div class="advantage--img-wrapper">
+            <img class="advantage--icon" src="./image/img_2.png" alt="book" />
+          </div>
+          <h3 class="advantage--item--subtitle">Book online</h3>
         </div>
-        <div class="col cont_col">
-          <img class="cont_icon guest" src="./image/img_3.png" alt="guest" />
-          <h3 class="cont_title_icon">Real guest reviews</h3>
+<!--        4 item-->
+        <div class="advantage__row--item">
+          <div class="advantage--img-wrapper">
+            <img class="advantage--icon" src="./image/img_3.png" alt="guest" />
+          </div>
+          <h3 class="advantage--item--subtitle">Real guest reviews</h3>
         </div>
       </div>
     </div>
@@ -90,7 +118,7 @@
         <div class="cont_col_about">
           <div class="row_1 about">About</div>
           <div class="row_1 career">Careers</div>
-          <div class="row_1 trip">How Triphouse works</div>
+          <div class="row_1 trip">How TripHouse works</div>
           <div class="row_1 term">Terms</div>
           <div class="row_1 privacy">Privacy</div>
         </div>
