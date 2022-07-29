@@ -1,63 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>flex_box></title>
-  <link rel="stylesheet" href="./styles/styles.css">
-</head>
-<body>
-<h1 class="header">Review base on a flex-box</h1>
-<h2 class="title">Lesson 5</h2>
-<div class="offer">
-  <h3 class="offer__title">What do we offer</h3>
-  <hr class="offer__line"/>
-  <div class="offer__row">
-    <div class="offer__column">
-      <img class="offer__column--support" src="./image/img.png" alt="support">
-      <h4 class="offer__column--title">Support 24/7</h4>
+  <head>
+    <meta charset="UTF-8" />
+    <title>flex_box></title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <h1 class="header">Review base on a flex-box</h1>
+    <h2 class="title">Lesson 5</h2>
+    <div class="container offer">
+      <h3 class="offer__title">What do we offer</h3>
+      <hr class="offer__line" />
+      <div class="offer__row">
+        <div class="offer__row--column">
+          <div class="img-wrap">
+            <img class="icon" src="./image/img.png" alt="support" />
+          </div>
+          <h4 class="icon-subtitle">Support 24/7</h4>
+        </div>
+        <div class="offer__row--column">
+          <div class="img-wrap">
+            <img class="icon" src="./image/img_1.png" alt="communicate" />
+          </div>
+          <h4 class="icon-subtitle">Communicate directory</h4>
+        </div>
+        <div class="offer__row--column">
+          <div class="img-wrap">
+            <img class="icon" src="./image/img_2.png" alt="book" />
+          </div>
+          <h4 class="icon-subtitle">Book online</h4>
+        </div>
+        <div class="offer__row--column">
+          <div class="img-wrap">
+            <img class="icon" src="./image/img_3.png" alt="guest" />
+          </div>
+          <h4 class="icon-subtitle">Real guest reviews</h4>
+        </div>
+      </div>
     </div>
-    <div class="offer__column">
-      <img class="offer__column--communicate" src="./image/img_1.png" alt="communicate">
-      <h4 class="offer__column--title">Communicate directory</h4>
+    <div class="container footer">
+      <div class="footer__row">
+        <div class="footer__row--column">
+          <div class="column-about">
+            <ul class="about">
+              About
+              <li class="list">How TripHouse works</li>
+              <li class="list">Careers</li>
+              <li class="list">Privacy</li>
+              <li class="list">Terms</li>
+            </ul>
+          </div>
+          <div class="column-property">
+            <ul class="property">
+              Property types
+              <li class="list">Guest houses</li>
+              <li class="list">Hotels</li>
+              <li class="list">Apartments</li>
+              <li class="list">Villas</li>
+              <li class="list">Holiday homes</li>
+              <li class="list">Hostels</li>
+            </ul>
+          </div>
+          <div class="column-support">
+            <ul class="support">
+              Support
+              <li class="list">Contact Customer Service</li>
+              <li class="list">FAQ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p id="footer">&copy; 2020 TripHouse, Inc. All rights reserved</p>
     </div>
-    <div class="offer__column">
-      <img class="offer__column--book" src="./image/img_2.png" alt="book">
-      <h4 class="offer__column--title">Book online</h4>
-    </div>
-    <div class="offer__column">
-      <img class="offer__column--review" src="./image/img_3.png" alt="guest">
-      <h4 class="offer__column--title">Real guest reviews</h4>
-    </div>
-  </div>
-</div>
-<div class="footer">
-  <div class="footer__row">
-    <div class="footer__column--about">
-      <ul class="footer__column--about-list">About
-        <li class="footer__column--list">How TripHouse works</li>
-        <li class="footer__column--list">Careers</li>
-        <li class="footer__column--list">Privacy</li>
-        <li class="footer__column--list">Terms</li>
-      </ul>
-    </div>
-    <div class="footer__column--property">
-      <ul class="footer__column--property-list">Property types
-        <li class="footer__column--list">Guest houses</li>
-        <li class="footer__column--list">Hotels</li>
-        <li class="footer__column--list">Apartments</li>
-        <li class="footer__column--list">Villas</li>
-        <li class="footer__column--list">Holiday homes</li>
-        <li class="footer__column--list">Hostels</li>
-      </ul>
-    </div>
-    <div class="footer__column--support">
-      <ul class="footer__column--support-list">Support
-        <li class="footer__column--list">Contact Customer Service</li>
-        <li class="footer__column--list">FAQ</li>
-      </ul>
-    </div>
-  </div>
-  <p id="footer">&copy; 2020 TripHouse, Inc. All rights reserved</p>
-</div>
-</body>
+  </body>
 </html>

@@ -15,11 +15,11 @@ body {
     text-align: center;
     margin-bottom: 20px;
 }
-/*OFFER*/
+/* container OFFER */
 
 .offer {
     max-width: 1440px;
-    padding: 0 16px;
+    min-height: 569px;
     margin: 0 auto;
 }
 
@@ -41,70 +41,56 @@ body {
 
 .offer__row {
     display: flex;
-    gap: 16px;
-    margin: 20px 104px 115px;
+    justify-content: space-around;
+    margin: 0 104px 115px;
 }
 
-.offer__column {
-    width: 25%;
-    text-align: center;
+.offer__row--column {
+    width: auto;
 }
 
-.offer__column--title {
+.img-wrap {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    max-width: 100px;
+    width: auto;
+}
+
+.icon-subtitle {
     font-size: 24px;
     line-height: 28px;
-    margin: 65px auto 10px;
+    margin: 48px auto 0;
     font-weight: 400;
     text-align: center;
     color: #383838;
 }
 
-.offer__column--support {
-    max-width: 100px;
-    min-height: 100px;
-    width: auto;
-}
-
-.offer__column--communicate {
-    max-width: 100px;
-    min-height: 100px;
-    width: auto;
-}
-
-.offer__column--book {
-    max-width: 100px;
-    min-height: 100px;
-    width: auto;
-}
-
-.offer__column--review {
-    max-width: 100px;
-    min-height: 100px;
-    width: auto;
-}
-
-/*FOOTER */
+/* container FOOTER */
 
 .footer {
     background: #10367C;
-    max-width: 1478px;
+    max-width: 1440px;
+    min-height: 630px;
     margin: 0 auto;
 }
 
-.footer__row {
-    display: flex;
-    justify-content: space-between;
-    background: #10367C;
-    max-width: 1440px;
-    margin: 0 272px 200px 104px;
+.footer__row--column {
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 120px 272px 64px 104px;
 }
 
-.footer__column--about {
+.column-about {
     color: #ffffff;
-    margin: 120px 222px 163px 0;
+    margin-right: 222px;
 }
 
-.footer__column--about-list {
+.about {
     width: 193px;
     padding: 0;
     list-style: none;
@@ -113,12 +99,12 @@ body {
     font-size: 20px;
 }
 
-.footer__column--property {
+.column-property {
     color: #ffffff;
-    margin: 120px 282px 64px 0;
+    margin-right: 282px;
 }
 
-.footer__column--property-list {
+.property {
     width: 134px;
     padding: 0;
     list-style: none;
@@ -127,12 +113,11 @@ body {
     font-size: 20px;
 }
 
-.footer__column--support {
+.column-support {
     color: #ffffff;
-    margin: 120px 0 253px 0;
 }
 
-.footer__column--support-list {
+.support {
     width: 233px;
     padding: 0;
     list-style: none;
@@ -141,8 +126,11 @@ body {
     font-size: 20px;
 }
 
-.footer__column--list {
+.list {
+    line-height: 2.3;
     font-weight: 400;
+    font-size: 20px;
+    width: max-content;
 }
 
 #footer {
@@ -150,4 +138,7 @@ body {
     padding-bottom: 120px;
     width: 350px;
     color: #ffffff;
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 14px;
 }
