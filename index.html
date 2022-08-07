@@ -2,78 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>TripHouse_Site</title>
+    <title>flex_box></title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="icon" type="image/x-icon" href="./image/icon-love.png" />
   </head>
   <body>
-    <div class="wrap-top">
-      <div class="container-top">
-        <div class="top-section">
-          <header class="header">
-            <div class="col-logo">
-              <img class="logo" src="image/logo.svg" alt="logo-icon" />
-            </div>
-            <div class="nav">
-              <div class="nav-tab">
-                <a class="nav-link" href="#">Stays</a>
-                <a class="nav-link" href="#">Attractions</a>
-              </div>
-              <div class="nav-icon">
-                <a class="nav-link" href="#">
-                  <img src="image/night.svg" alt="night-icon" />
-                </a>
-                <a class="nav-link" href="#">
-                  <img src="image/account.svg" alt="account-icon" />
-                </a>
-              </div>
-            </div>
-          </header>
-          <main class="main">
-            <div class="main-title">
-              Discover stays
-              <p>to live, work or just relax</p>
-            </div>
-            <div class="main-subtitle">
-              <div class="subtitle">Your destination or hotel name</div>
-              <div class="subtitle">Check-in — Check-out</div>
-            </div>
-            <div class="main-search">
-              <div class="button city">
-                <label for="name1">
-                  <input id="name1" type="text" name="New York" />
-                </label>
-              </div>
-              <div class="button date">
-                <label for="name2">
-                  <input
-                    id="name2"
-                    type="text"
-                    name="Tue 15 Sept — Sat 19 Sept"
-                  />
-                </label>
-              </div>
-              <div class="button setting">
-                <label for="name3">
-                  <input
-                    id="name3"
-                    type="text"
-                    name="2 Adults — 0 Children — 1 Room"
-                  />
-                </label>
-              </div>
-              <button type="submit">Search</button>
-            </div>
-            <div class="page__container--app">
-              <div class="page__container--app-google">
-                <img src="image/google.svg" alt="google app" />
-              </div>
-              <div class="page__container--app-store">
-                <img src="image/store.svg" alt="app store" />
-              </div>
-            </div>
-          </main>
+    <div class="container offer">
+      <h3 class="offer__title">What do we offer</h3>
+      <hr class="offer__line" />
+      <div class="offer__row">
+        <div class="offer__row--column">
+          <div class="img-wrap">
+            <img class="icon" src="./image/img.png" alt="support" />
+          </div>
+          <h4 class="icon-subtitle">Support 24/7</h4>
         </div>
+        <div class="offer__row--column">
+          <div class="img-wrap">
+            <img class="icon" src="./image/img_1.png" alt="communicate" />
+          </div>
+          <h4 class="icon-subtitle">Communicate directory</h4>
+        </div>
+        <div class="offer__row--column">
+          <div class="img-wrap">
+            <img class="icon" src="./image/img_2.png" alt="book" />
+          </div>
+          <h4 class="icon-subtitle">Book online</h4>
+        </div>
+        <div class="offer__row--column">
+          <div class="img-wrap">
+            <img class="icon" src="./image/img_3.png" alt="guest" />
+          </div>
+          <h4 class="icon-subtitle">Real guest reviews</h4>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__row--column">
+          <ul class="footer__column">
+            <li class="list subtitle">About</li>
+            <li class="list">How TripHouse works</li>
+            <li class="list">Careers</li>
+            <li class="list">Privacy</li>
+            <li class="list">Terms</li>
+          </ul>
+          <ul class="footer__column">
+            <li class="list subtitle">Property types</li>
+            <li class="list">Guest houses</li>
+            <li class="list">Hotels</li>
+            <li class="list">Apartments</li>
+            <li class="list">Villas</li>
+            <li class="list">Holiday homes</li>
+            <li class="list">Hostels</li>
+          </ul>
+          <ul class="footer__column">
+            <li class="list subtitle">Support</li>
+            <li class="list">Contact Customer Service</li>
+            <li class="list">FAQ</li>
+          </ul>
+        </div>
+        <p class="copyright">&copy; 2020 TripHouse, Inc. All rights reserved</p>
       </div>
     </div>
   </body>
