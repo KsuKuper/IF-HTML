@@ -100,15 +100,16 @@ h3 {
 }
 
 .offer__subtitle {
+  font-weight: 400;
   font-size: 24px;
   color: #383838;
 }
 
 /* container FOOTER */
-.container {
-  max-width: 1264px;
-  margin: 0 auto;
-}
+/*.container {*/
+/*  max-width: 1264px;*/
+/*  margin: 0 auto;*/
+/*}*/
 
 .footer {
   background: #10367c;
