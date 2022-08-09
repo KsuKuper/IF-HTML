@@ -6,6 +6,84 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
+    <div class="wrap-top">
+      <div class="container-top">
+        <div class="top-section">
+          <header class="header">
+            <div class="col-logo">
+              <img class="logo" src="image/logo.svg" alt="logo-icon" />
+            </div>
+            <div class="nav">
+              <div class="nav-tab">
+                <a class="nav-link" href="#">Stays</a>
+                <a class="nav-link" href="#">Attractions</a>
+              </div>
+              <div class="nav-icon">
+                <a class="nav-link" href="#">
+                  <img src="image/night.svg" alt="night-icon" />
+                </a>
+                <a class="nav-link" href="#">
+                  <img src="image/account.svg" alt="account-icon" />
+                </a>
+              </div>
+            </div>
+          </header>
+          <main class="main">
+            <div class="main-title">
+              Discover stays
+              <p>to live, work or just relax</p>
+            </div>
+            <div class="label">
+              <div class="label-row">
+                <label for="label-city">Your destination or hotel name</label>
+              </div>
+              <div class="label-row">
+                <label for="label-date">Check-in — Check-out</label>
+              </div>
+            </div>
+            <form class="main-search" action="" method="post">
+              <div class="field-city">
+                <input
+                  class="input-city"
+                  id="label-city"
+                  name="label-city"
+                  type="search"
+                  placeholder="New York"
+                />
+              </div>
+              <div class="field-date">
+                <input
+                  class="input-date"
+                  id="label-date"
+                  name="label-date"
+                  type="search"
+                  placeholder="Tue 15 Sept — Sat 19 Sept"
+                />
+              </div>
+              <div class="field-setting">
+                <label for="label-setting"></label>
+                <input
+                  class="input-setting"
+                  id="label-setting"
+                  name="label-setting"
+                  type="search"
+                  placeholder="2 Adults — 0 Children — 1 Room"
+                />
+              </div>
+              <button class="search" type="submit">Search</button>
+            </form>
+            <div class="page__container--app">
+              <div class="page__container--app-google">
+                <img src="image/google.svg" alt="google app" />
+              </div>
+              <div class="page__container--app-store">
+                <img src="image/store.svg" alt="app store" />
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
     <div class="container offer">
       <h3 class="offer__title">What do we offer</h3>
       <hr class="offer__line" />
@@ -14,7 +92,6 @@
           <div class="offer__img-wrap">
             <svg
               class="offer__icon offer__icon--sup"
-              viewBox="0 0 76 92"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -36,7 +113,6 @@
           <div class="offer__img-wrap">
             <svg
               class="offer__icon offer__icon--com"
-              viewBox="0 0 92 92"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -50,8 +126,6 @@
           <div class="offer__img-wrap">
             <svg
               class="offer__icon offer__icon--book"
-              viewBox="0 0 100 68"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -65,7 +139,6 @@
           <div class="offer__img-wrap">
             <svg
               class="offer__icon offer__icon--review"
-              viewBox="0 0 92 84"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
