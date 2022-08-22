@@ -2,34 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>flex_box></title>
+    <title>TripHouse</title>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
+    <!-- TOP -->
     <div class="wrap-top">
       <div class="container-top">
-        <div class="top-section">
+        <div class="top">
+          <!--  HEADER -->
           <header class="header">
-            <div class="col-logo">
+            <div class="header__logo">
               <img class="logo" src="image/logo.svg" alt="logo-icon" />
             </div>
-            <div class="nav">
-              <div class="nav-tab">
-                <a class="nav-link" href="#">Stays</a>
-                <a class="nav-link" href="#">Attractions</a>
+            <div class="header__nav">
+              <div class="nav__tab">
+                <a class="nav__link" href="#">Stays</a>
+                <a class="nav__link" href="#">Attractions</a>
               </div>
-              <div class="nav-icon">
-                <a class="nav-link" href="#">
+              <div class="nav__icon">
+                <a class="nav__link" href="#">
                   <img src="image/night.svg" alt="night-icon" />
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav__link" href="#">
                   <img src="image/account.svg" alt="account-icon" />
                 </a>
               </div>
             </div>
           </header>
+          <!--  MAIN -->
           <main class="main">
-            <div class="main-title">
+            <div class="main__title">
               Discover stays
               <p>to live, work or just relax</p>
             </div>
@@ -84,18 +87,20 @@
         </div>
       </div>
     </div>
-    <div class="container offer">
-      <h3 class="offer__title">What do we offer</h3>
-      <hr class="offer__line" />
-      <div class="row">
-        <div class="offer__col col-3">
-          <div class="offer__img-wrap">
-            <svg
-              class="offer__icon offer__icon--sup"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M67.1667 54.3334V71H58.8333V54.3334H67.1667ZM17.1667
+    <!-- OFFER -->
+    <div class="offer">
+      <div class="container">
+        <h3 class="offer__title">What do we offer</h3>
+        <hr class="offer__line" />
+        <div class="row">
+          <div class="offer__col col-3">
+            <div class="offer__img-wrap">
+              <svg
+                class="offer__icon offer__icon--sup"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M67.1667 54.3334V71H58.8333V54.3334H67.1667ZM17.1667
               54.3334V71H13C10.7083 71 8.83333 69.125 8.83333
               66.8334V54.3334H17.1667ZM38 0.166687C17.2917 0.166687 0.5 16.9584
               0.5 37.6667V66.8334C0.5 73.75 6.08333 79.3334 13
@@ -104,53 +109,159 @@
               37.6667V46H50.5V79.3334H67.1667V83.5H38V91.8334H63C69.9167 91.8334
               75.5 86.25 75.5 79.3334V37.6667C75.5 16.9584 58.7083 0.166687 38
               0.166687Z"
-              />
-            </svg>
+                />
+              </svg>
+            </div>
+            <h4 class="offer__subtitle">Support 24/7</h4>
           </div>
-          <h4 class="offer__subtitle">Support 24/7</h4>
-        </div>
-        <div class="offer__col col-3">
-          <div class="offer__img-wrap">
-            <svg
-              class="offer__icon offer__icon--com"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M65.3335 10.3333V45.3333H16.1835L10.3335 51.1833V10.3333H65.3335ZM70.3335 0.333313H5.3335C2.5835 0.333313 0.333496 2.58331 0.333496 5.33331V75.3333L20.3335 55.3333H70.3335C73.0835 55.3333 75.3335 53.0833 75.3335 50.3333V5.33331C75.3335 2.58331 73.0835 0.333313 70.3335 0.333313ZM95.3335 20.3333H85.3335V65.3333H20.3335V75.3333C20.3335 78.0833 22.5835 80.3333 25.3335 80.3333H80.3335L100.333 100.333V25.3333C100.333 22.5833 98.0835 20.3333 95.3335 20.3333Z"
-              />
-            </svg>
+          <div class="offer__col col-3">
+            <div class="offer__img-wrap">
+              <svg
+                class="offer__icon offer__icon--com"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M65.3335 10.3333V45.3333H16.1835L10.3335 51.1833V10.3333H65.3335ZM70.3335 0.333313H5.3335C2.5835 0.333313 0.333496 2.58331 0.333496 5.33331V75.3333L20.3335 55.3333H70.3335C73.0835 55.3333 75.3335 53.0833 75.3335 50.3333V5.33331C75.3335 2.58331 73.0835 0.333313 70.3335 0.333313ZM95.3335 20.3333H85.3335V65.3333H20.3335V75.3333C20.3335 78.0833 22.5835 80.3333 25.3335 80.3333H80.3335L100.333 100.333V25.3333C100.333 22.5833 98.0835 20.3333 95.3335 20.3333Z"
+                />
+              </svg>
+            </div>
+            <h4 class="offer__subtitle">Communicate directly</h4>
           </div>
-          <h4 class="offer__subtitle">Communicate directly</h4>
-        </div>
-        <div class="offer__col col-3">
-          <div class="offer__img-wrap">
-            <svg
-              class="offer__icon offer__icon--book"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16.6667 9.00002H91.6667V0.666687H16.6667C12.0833 0.666687 8.33333 4.41669 8.33333 9.00002V54.8333H0V67.3333H58.3333V54.8333H16.6667V9.00002ZM95.8333 17.3334H70.8333C68.5417 17.3334 66.6667 19.2084 66.6667 21.5V63.1667C66.6667 65.4583 68.5417 67.3333 70.8333 67.3333H95.8333C98.125 67.3333 100 65.4583 100 63.1667V21.5C100 19.2084 98.125 17.3334 95.8333 17.3334ZM91.6667 54.8333H75V25.6667H91.6667V54.8333Z"
-              />
-            </svg>
+          <div class="offer__col col-3">
+            <div class="offer__img-wrap">
+              <svg
+                class="offer__icon offer__icon--book"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.6667 9.00002H91.6667V0.666687H16.6667C12.0833 0.666687 8.33333 4.41669 8.33333 9.00002V54.8333H0V67.3333H58.3333V54.8333H16.6667V9.00002ZM95.8333 17.3334H70.8333C68.5417 17.3334 66.6667 19.2084 66.6667 21.5V63.1667C66.6667 65.4583 68.5417 67.3333 70.8333 67.3333H95.8333C98.125 67.3333 100 65.4583 100 63.1667V21.5C100 19.2084 98.125 17.3334 95.8333 17.3334ZM91.6667 54.8333H75V25.6667H91.6667V54.8333Z"
+                />
+              </svg>
+            </div>
+            <h4 class="offer__subtitle">Book online</h4>
           </div>
-          <h4 class="offer__subtitle">Book online</h4>
-        </div>
-        <div class="offer__col col-3">
-          <div class="offer__img-wrap">
-            <svg
-              class="offer__icon offer__icon--review"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M83.4998 29.3334H57.2082L61.1665 10.2917L61.2915 8.95835C61.2915 7.25002 60.5832 5.66669 59.4582 4.54169L55.0415 0.166687L27.6248 27.625C26.0832 29.125 25.1665 31.2084 25.1665 33.5V75.1667C25.1665 79.75 28.9165 83.5 33.4998 83.5H70.9998C74.4582 83.5 77.4165 81.4167 78.6665 78.4167L91.2498 49.0417C91.6248 48.0834 91.8332 47.0834 91.8332 46V37.6667C91.8332 33.0834 88.0832 29.3334 83.4998 29.3334ZM83.4998 46L70.9998 75.1667H33.4998V33.5L51.5832 15.4167L46.9582 37.6667H83.4998V46ZM0.166504 33.5H16.8332V83.5H0.166504V33.5Z"
-              />
-            </svg>
+          <div class="offer__col col-3">
+            <div class="offer__img-wrap">
+              <svg
+                class="offer__icon offer__icon--review"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M83.4998 29.3334H57.2082L61.1665 10.2917L61.2915 8.95835C61.2915 7.25002 60.5832 5.66669 59.4582 4.54169L55.0415 0.166687L27.6248 27.625C26.0832 29.125 25.1665 31.2084 25.1665 33.5V75.1667C25.1665 79.75 28.9165 83.5 33.4998 83.5H70.9998C74.4582 83.5 77.4165 81.4167 78.6665 78.4167L91.2498 49.0417C91.6248 48.0834 91.8332 47.0834 91.8332 46V37.6667C91.8332 33.0834 88.0832 29.3334 83.4998 29.3334ZM83.4998 46L70.9998 75.1667H33.4998V33.5L51.5832 15.4167L46.9582 37.6667H83.4998V46ZM0.166504 33.5H16.8332V83.5H0.166504V33.5Z"
+                />
+              </svg>
+            </div>
+            <h4 class="offer__subtitle">Real guest reviews</h4>
           </div>
-          <h4 class="offer__subtitle">Real guest reviews</h4>
         </div>
       </div>
     </div>
-    <div class="footer">
+    <!-- GUESTS -->
+    <div class="guests">
+      <div class="container">
+        <h3 class="guests__title">Homes guests loves</h3>
+        <div class="guests__row">
+          <div class="guests__col">
+            <div class="guests__img">
+              <img
+                src="./image/guests-home/guests-home-1.jpg"
+                alt="guest-home"
+              />
+            </div>
+            <h4 class="guests__subtitle">Hotel Leopold</h4>
+            <p class="guests__text">Saint Petersburg, Russia</p>
+          </div>
+          <div class="guests__col">
+            <div class="guests__img">
+              <img
+                src="./image/guests-home/guests-home-2.jpg"
+                alt="guest-home"
+              />
+            </div>
+            <h4 class="guests__subtitle">Apartment Sunshine</h4>
+            <p class="guests__text">Santa  Cruz de Tenerife, Spain</p>
+          </div>
+          <div class="guests__col">
+            <div class="guests__img">
+              <img
+                src="./image/guests-home/guests-home-3.jpg"
+                alt="guest-home"
+              />
+            </div>
+            <h4 class="guests__subtitle">Villa Kunerad</h4>
+            <p class="guests__text">Vysokie Tatry, Slowakia</p>
+          </div>
+          <div class="guests__col">
+            <div class="guests__img">
+              <img
+                src="./image/guests-home/guests-home-4.jpg"
+                alt="guest-home"
+              />
+            </div>
+            <h4 class="guests__subtitle">Hostel Friendship</h4>
+            <p class="guests__text">Berlin, Germany</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DESTINATIONS -->
+    <div class="destinations">
+      <div class="container">
+        <h3 class="destinations__title">The best destinations</h3>
+    <!-- SLIDE -->
+        <div class="destinations__slide">
+            <div class="destinations__item">
+              <a class="item item-region" href="#">Regions</a>
+              <a class="item item-city" href="#">Cities</a>
+              <a class="item item-interest" href="#">Places of interest</a>
+            </div>
+        </div>
+
+        <div class="destinations__row">
+          <div class="destinations__col">
+            <div class="destinations__img">
+              <img
+                      src="./image/guests-home/guests-home-1.jpg"
+                      alt="guest-home"
+              />
+            </div>
+            <h4 class="destinations__subtitle">Hotel Leopold</h4>
+            <p class="destinations__text">Saint Petersburg, Russia</p>
+          </div>
+          <div class="destinations__col">
+            <div class="destinations__img">
+              <img
+                      src="./image/guests-home/guests-home-2.jpg"
+                      alt="guest-home"
+              />
+            </div>
+            <h4 class="destinations__subtitle">Apartment Sunshine</h4>
+            <p class="destinations__text">Santa  Cruz de Tenerife, Spain</p>
+          </div>
+          <div class="destinations__col">
+            <div class="destinations__img">
+              <img
+                      src="./image/guests-home/guests-home-3.jpg"
+                      alt="guest-home"
+              />
+            </div>
+            <h4 class="destinations__subtitle">Villa Kunerad</h4>
+            <p class="destinations__text">Vysokie Tatry, Slowakia</p>
+          </div>
+          <div class="destinations__col">
+            <div class="destinations__img">
+              <img
+                      src="./image/guests-home/guests-home-4.jpg"
+                      alt="guest-home"
+              />
+            </div>
+            <h4 class="destinations__subtitle">Hostel Friendship</h4>
+            <p class="destinations__text">Berlin, Germany</p>
+          </div>
+        </div>
+      </div>
+    <!-- FOOTER -->
+      <div class="footer">
       <div class="container">
         <div class="footer__row--column">
           <ul class="footer__column">
