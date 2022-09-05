@@ -86,22 +86,39 @@ body {
   content: "";
   display: none;
   width: 100%;
+  max-width: 50px;
   height: 2px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f5bd41;
   z-index: 1;
 }
 
+.nav__link.active:after {
+  display: block;
+}
+
 .nav__link:hover {
-  text-decoration: #f5bd41;
+  display: block;
 }
 
 .nav__link:hover:after {
   display: block;
 }
 
-.nav__icon {
-  display: flex;
-  gap: 24px;
+.nav__link.icon:hover {
+  display: block;
+  width: 100%;
+}
+
+.icon-night {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-account {
+  width: 40px;
+  height: 40px;
 }
 
 .main__title {
@@ -236,32 +253,31 @@ body {
   padding-bottom: 120px;
 }
 
-.section__title.active {
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 47px;
-  text-align: center;
-  margin-bottom: 84px;
-  cursor: pointer;
-}
-
 .section__title {
   font-size: 40px;
   font-weight: 500;
   line-height: 47px;
   text-align: center;
   margin-bottom: 104px;
+  position: relative;
 }
 
-.section__title.active:after {
+.section__title:after {
   content: "";
-  display: block;
+  display: none;
   border: none;
   background: #f5bd41;
   width: 100px;
   height: 4px;
   margin: 20px auto;
-  position: relative;
+}
+
+.section__title.active:after {
+  display: block;
+}
+
+.section__title:hover:after {
+  display: block;
 }
 
 .offer__col {
@@ -581,17 +597,20 @@ body {
 }
 
 .img-resort {
-  background: url("../image/reviews/resort.svg");
+  background: url("../image/reviews/resort.svg") center no-repeat;
+  background-size: cover;
   height: 400px;
 }
 
 .img-hostel {
-  background: url("../image/reviews/hostel.svg");
+  background: url("../image/reviews/hostel.svg") center no-repeat;
+  background-size: cover;
   height: 400px;
 }
 
 .img-hotel {
-  background: url("../image/reviews/hotel.svg");
+  background: url("../image/reviews/hotel.svg") center no-repeat;
+  background-size: cover;
   height: 400px;
 }
 
