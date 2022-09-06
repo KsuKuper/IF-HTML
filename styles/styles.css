@@ -35,9 +35,56 @@ body {
 .container {
   max-width: 1264px;
   min-height: 100vh;
+  padding: 0 16px;
   margin: 0 auto;
-  padding-top: 120px;
-  padding-bottom: 120px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
 }
 
 .top {
@@ -230,21 +277,6 @@ body {
   padding: 0 16px;
 }
 
-.row {
-  display: flex;
-  gap: 16px;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-}
-
-.col-5 {
-}
-
 /*======Offer=======*/
 
 .offer {
@@ -260,6 +292,7 @@ body {
   text-align: center;
   margin-bottom: 104px;
   position: relative;
+  transition: color 0.1s linear;
 }
 
 .section__title:after {
@@ -269,7 +302,7 @@ body {
   background: #f5bd41;
   width: 100px;
   height: 4px;
-  margin: 20px auto;
+  margin: 20px auto 0;
 }
 
 .section__title.active:after {
@@ -278,6 +311,12 @@ body {
 
 .section__title:hover:after {
   display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .offer__col {
@@ -360,27 +399,11 @@ body {
   font-weight: 400;
 }
 
-.slide__btn {
-  font-size: 0;
-  color: transparent;
+.slide__btn--after {
   position: absolute;
   top: 25%;
+  right: -2%;
   z-index: 1;
-}
-
-.slide__btn:after {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-
-  border-top: 2px solid #cccccc;
-  border-right: 2px solid #cccccc;
-}
-
-.slide__btn--after {
-  right: -1%;
-  transform: rotate(45deg);
 }
 
 /*==========DESTINATIONS========*/
@@ -448,7 +471,6 @@ body {
 .destinations__row {
   display: flex;
   gap: 16px;
-
   position: relative;
 }
 
@@ -458,9 +480,6 @@ body {
 
 .destinations__inner {
   position: relative;
-}
-
-.dest-img {
 }
 
 .destinations__subtitle {
@@ -507,12 +526,12 @@ body {
   height: 48px;
 }
 
-.arrow-bottom {
-  top: 400px;
-  left: 588px;
-  z-index: 1;
-  transform: rotate(90deg);
+.slide__btn--bottom {
   position: absolute;
+  top: 110%;
+  right: 48%;
+  transform: rotate(90deg);
+  z-index: 1;
 }
 
 /*==========Sing up========*/
@@ -583,6 +602,7 @@ body {
   display: flex;
   gap: 16px;
   padding-bottom: 120px;
+  position: relative;
 }
 
 .reviews__item {
@@ -714,6 +734,13 @@ body {
   line-height: 1.2;
 }
 
+.slide__btn--after-reviews {
+  position: absolute;
+  top: 20%;
+  right: -2%;
+  z-index: 1;
+}
+
 /*==========FOOTER========*/
 
 .footer {
@@ -755,4 +782,83 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-size: 14px;
+}
+
+/*==================Burger====================*/
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+/*==================Search-hidden==============*/
+
+.input.input--date2 {
+  display: none;
+}
+
+.input.input--setting2 {
+  display: none;
+}
+
+.input.input--setting3 {
+  display: none;
+}
+
+/*==================MEDIA====================*/
+
+@media (max-width: 768px) {
+  [class*="col-"] {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  .offer {
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .section__title.active {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+
+  .section__title.active:after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  [class*="col-"] {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .offer {
+    height: 100%;
+  }
+
+  .section__title {
+    font-weight: 500;
+    font-size: 28px;
+  }
+
+  .section__title.active:after {
+    display: none;
+  }
+
+  .offer__img-wrap {
+    margin-bottom: 16px;
+  }
+
+  .offer__icon.offer__icon--com {
+    width: 70px;
+    height: 70px;
+  }
+
+  .offer__subtitle {
+    font-weight: 400;
+    font-size: 15px;
+  }
 }
